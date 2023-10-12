@@ -8,7 +8,7 @@ router = APIRouter(prefix="/questions", tags=["Question"])
 
 
 @router.post(
-    path="/get_questions",
+    path="/get_question",
     response_model=QuestionResponse,
 )
 async def get_question(payload: QuestionRequest):
